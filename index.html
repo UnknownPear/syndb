@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Synergy Stock Dashboard</title>
+    
+    <!-- SECURITY FIX: Strict Content Security Policy (Updated for Google Login) -->
+    <meta 
+      http-equiv="Content-Security-Policy" 
+      content="
+        default-src 'self'; 
+        base-uri 'self';
+        object-src 'none';
+        img-src 'self' data: https://*.ebay.com https://*.ebayimg.com https://encrypted-tbn0.gstatic.com https://res.cloudinary.com https://lh3.googleusercontent.com;
+        script-src 'self' 'unsafe-inline' 'unsafe-eval' https://accounts.google.com https://gsi.client-only.google.com https://www.google.com;
+        style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://accounts.google.com;
+        font-src 'self' https://fonts.gstatic.com; 
+        frame-src 'self' https://accounts.google.com https://gsi.client-only.google.com;
+        connect-src 'self' http://localhost:* https://text.pollinations.ai https://api.ebay.com https://accounts.google.com https://www.googleapis.com;
+      "
+    />
+
+    <meta name="description" content="Synergy Systems" />
+    <meta name="author" content="Synergy" />
+    <meta property="og:title" content="Synergy Systems" />
+    <meta property="og:description" content="Synergy" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://www.ebay.com/str/discountharddrivesupply" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@lovable_dev" />
+    <meta name="twitter:image" content="https://www.ebay.com/str/discountharddrivesupply" />
+  </head>
+
+  <body style="background-color: #0f172a;">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
