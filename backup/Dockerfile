@@ -1,5 +1,5 @@
 # Use a newer version of Alpine that has PostgreSQL 16 tools
-FROM alpine:3.20
+FROM alpine:3.23.2
 
 # Install necessary tools
 RUN apk add --no-cache \
